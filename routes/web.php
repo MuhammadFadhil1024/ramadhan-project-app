@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/al-quran', function () {
-    return view('alquran');
+Route::get('/surah', function () {
+    return view('al-quran.index');
 });

@@ -23,4 +23,9 @@ enum EndpointAPI: string
     {
         return self::getBaseUrl() . $this->value;
     }
+
+    public static function getFullSurahEndpoint(): string
+    {
+        return self::getBaseUrl() . self::QURAN->value . self::SURAT->value . 'all';
+    }
 }
